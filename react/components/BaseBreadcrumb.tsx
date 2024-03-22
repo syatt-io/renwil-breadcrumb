@@ -2,8 +2,9 @@ import React, { Fragment, useMemo } from 'react'
 import unorm from 'unorm'
 import { Link } from 'vtex.render-runtime'
 import { useCssHandles, applyModifiers } from 'vtex.css-handles'
-import { IconCaret, IconHome } from 'vtex.store-icons'
+import { IconCaret } from 'vtex.store-icons'
 import { useDevice } from 'vtex.device-detector'
+import { defineMessages } from 'react-intl'
 
 const CSS_HANDLES = [
   'container',
@@ -66,7 +67,7 @@ const Breadcrumb: React.FC<Props> = ({
   categoryTree,
   breadcrumb,
   showOnMobile = false,
-  homeIconSize = 26,
+  // homeIconSize = 26,
   caretIconSize = 8,
 }) => {
   const handles = useCssHandles(CSS_HANDLES)
@@ -75,6 +76,13 @@ const Breadcrumb: React.FC<Props> = ({
     () => breadcrumb ?? categoryTree ?? getCategoriesList(categories),
     [breadcrumb, categories, categoryTree]
   )
+
+  const messages = defineMessages({
+    home: { id: 'store/breadcrumbs.home' },
+  })
+
+  // eslint-disable-next-line no-console
+  console.log(navigationList, 'navigationList')
 
   const linkBaseClasses = 'dib pv1 link ph2 c-muted-2 hover-c-link'
   const shouldBeRendered = (showOnMobile && isMobile) || !isMobile
@@ -89,7 +97,7 @@ const Breadcrumb: React.FC<Props> = ({
         className={`${handles.link} ${handles.homeLink} ${linkBaseClasses} v-mid`}
         page="store.home"
       >
-        <IconHome size={homeIconSize} />
+        {messages.home.id}
       </Link>
       {navigationList.map(({ name, href }, i) => {
         let decodedName = ''
