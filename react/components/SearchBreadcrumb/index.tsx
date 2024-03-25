@@ -21,9 +21,6 @@ const SearchBreadcrumb: FC<Props> = ({
     searchQuery?.data?.facets?.breadcrumb ??
     []
 
-  // eslint-disable-next-line no-console
-  console.log(breadcrumb, 'breadcrumbbreadcrumb')
-
   return (
     <>
       <SearchBreadcrumbStructuredData breadcrumb={breadcrumb} />
