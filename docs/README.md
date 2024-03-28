@@ -1,6 +1,9 @@
 📢 Use this project, [contribute](https://github.com/vtex-apps/breadcrumb) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Breadcrumb
@@ -15,7 +18,7 @@ The VTEX BreadCrumb is a navigation scheme that shows a user's browsing history 
 
 ```json
   dependencies: {
-    "vtex.breadcrumb": "1.x"
+    "renwil.breadcrumb": "1.x"
   }
 ```
 
@@ -29,11 +32,11 @@ The VTEX BreadCrumb is a navigation scheme that shows a user's browsing history 
   },
 ```
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `showOnMobile`        | `Boolean`       | It determines whether Breadcrumb should also be displayed on mobile          | `false`              |
-| `homeIconSize`  | `Number`        | Controls the `size` property of [`IconHome`](https://github.com/vtex-apps/store-icons#icons)                                                                                                      | `26` |
-| `caretIconSize` | `Number`        | Controls the `size` property of [`IconCaret`](https://github.com/vtex-apps/store-icons#icons)                                                                                                     | `8` |
+| Prop name       | Type      | Description                                                                                   | Default value |
+| --------------- | --------- | --------------------------------------------------------------------------------------------- | ------------- |
+| `showOnMobile`  | `Boolean` | It determines whether Breadcrumb should also be displayed on mobile                           | `false`       |
+| `homeIconSize`  | `Number`  | Controls the `size` property of [`IconHome`](https://github.com/vtex-apps/store-icons#icons)  | `26`          |
+| `caretIconSize` | `Number`  | Controls the `size` property of [`IconCaret`](https://github.com/vtex-apps/store-icons#icons) | `8`           |
 
 :warning: The product's categories should appear as an array in one of this two formats:
 
@@ -55,25 +58,25 @@ categories = ['eletronics', 'eletronics-computers']
   },
 ```
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `showOnMobile`        | `Boolean`       | It determines whether Breadcrumb should also be displayed on mobile          | `false`              |
-| `homeIconSize`  | `Number`        | Controls the `size` property of [`IconHome`](https://github.com/vtex-apps/store-icons#icons)                                                                                                      | `26` |
-| `caretIconSize` | `Number`        | Controls the `size` property of [`IconCaret`](https://github.com/vtex-apps/store-icons#icons)                                                                                                     | `8` |
-> ℹ️ *The `breadcrumb.search` block is specific for the Breadcrumb inside the search result page.* 
+| Prop name       | Type      | Description                                                                                   | Default value |
+| --------------- | --------- | --------------------------------------------------------------------------------------------- | ------------- |
+| `showOnMobile`  | `Boolean` | It determines whether Breadcrumb should also be displayed on mobile                           | `false`       |
+| `homeIconSize`  | `Number`  | Controls the `size` property of [`IconHome`](https://github.com/vtex-apps/store-icons#icons)  | `26`          |
+| `caretIconSize` | `Number`  | Controls the `size` property of [`IconCaret`](https://github.com/vtex-apps/store-icons#icons) | `8`           |
+
+> ℹ️ _The `breadcrumb.search` block is specific for the Breadcrumb inside the search result page._
 
 ## Customization
 
-In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization). 
+In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).
 
 | CSS Handles |
-| ----------- | 
-| `container` | 
-| `link`      | 
-| `arrow`     | 
-| `homeLink`  | 
+| ----------- |
+| `container` |
+| `link`      |
+| `arrow`     |
+| `homeLink`  |
 | `termArrow` |
-
 
 ## Contributors ✨
 
@@ -84,6 +87,7 @@ Thanks goes to these wonderful people:
 <!-- markdownlint-disable -->
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

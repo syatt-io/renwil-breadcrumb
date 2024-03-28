@@ -1,5 +1,5 @@
 {
-  "name": "vtex.breadcrumbs",
+  "name": "renwil.breadcrumbs",
   "description": "A Breadcrumb component.",
   "scripts": {
     "test": "vtex-test-tools test",
