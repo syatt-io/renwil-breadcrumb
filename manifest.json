@@ -1,7 +1,7 @@
 {
   "vendor": "renwil",
   "name": "breadcrumb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "renwil Breadcrumb",
   "description": "Breadcrumb Component",
   "defaultLocale": "pt-BR",
