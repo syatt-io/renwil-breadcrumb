@@ -7,16 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [0.1.0] - 2024-04-01
-
-## [0.0.4] - 2024-04-01
-
-## [0.0.3] - 2024-04-01
-
-## [0.0.2] - 2024-04-01
-
-## [1.9.4] - 2021-07-16
-
+## [1.9.5] - 2024-04-01
+- Matched version to the VTEX's tags version.
 ### Fixed
 
 - Update the README to clarify the difference between `breadcrumb.search` and `breadcrumb`.
